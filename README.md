@@ -114,18 +114,14 @@ In the mainActivity set the adapter to the growing list view as follows,
             adapterq.notifyDataSetChanged();
             strings.add(0,"I am changed at postion 0");
             adapterq.notifyDataItemChanged(0);
-            growingListView.setOnItemClickListener(this);
+            
         }
 
-        @Override
-        public void onClick(View view, int i) 
-        {
-            Toast.makeText(MainActivity.this, "Hello i am clicked"+i, Toast.LENGTH_SHORT).show();
-        }
-    }
+     }
 
-    NotifyDataSetChanged() -- call this function once if you change the data in the list to reflect to the UI.
-    notifyDataItemChanged(int position) -- call this function to change the item at the particular position.
+NotifyDataSetChanged() -- call this function once if you change the data in the list to reflect to the UI.
+
+notifyDataItemChanged(int position) -- call this function to change the item at the particular position.
 
 To use the item click listener.
 Follow the below procedure,
